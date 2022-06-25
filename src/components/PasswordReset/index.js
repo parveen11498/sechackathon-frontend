@@ -9,7 +9,7 @@ const PasswordReset = () => {
 	const [msg, setMsg] = useState("");
 	const [error, setError] = useState("");
 	const param = useParams();
-	const url = `http://localhost:3003/auth/password-reset/${param.id}/${param.token}`;
+	const url = `https://guvi-31we.herokuapp.com/auth/password-reset/${param.id}/${param.token}`;
 
 	useEffect(() => {
 		const verifyUrl = async () => {

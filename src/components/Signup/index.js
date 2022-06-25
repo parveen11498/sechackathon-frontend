@@ -21,7 +21,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:3003/auth/signup";
+			const url = "https://guvi-31we.herokuapp.com/auth/signup";
 			const { data: res } = await axios.post(url, data);
 			setMsg(res.message);
 		} catch (error) {
